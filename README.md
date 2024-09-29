@@ -11,18 +11,18 @@ Additionally, PCR revealed that the illiteracy rate also plays a significant rol
 The dataset used for this analysis includes various socio-economic factors affecting poverty across different cities in Indonesia. The dependent variable is poverty level, while independent variables include average wages, literacy rate, and other socio-economic indicators.
 
 ## Key Tasks
-1. **Multiple Linear Regression**
+1. **Multiple Linear Regression** <br>
 The initial analysis was performed using Multiple Linear Regression to identify variables that significantly impact poverty. However, this model violated the assumption of no multicollinearity, leading to unreliable estimates of the relationship between independent variables and poverty.
 
-2. **Ridge Regression**
+2. **Ridge Regression** <br>
 To address multicollinearity, Ridge Regression was implemented. This method adds a penalty to the size of the coefficients, thus mitigating the issue of multicollinearity and improving model stability.
     - **Key Findings**: Average wage per hour is a significant predictor of poverty, with an R² score of 0.87, indicating a good fit to the data.
 
-3. Principal Component Regression (PCR)
+3. **Principal Component Regression (PCR)** <br>
 Principal Component Regression (PCR) was employed as an additional method to handle multicollinearity by transforming the independent variables into principal components. PCR reduces dimensionality and focuses on components that explain the most variance in the data.
     - **Key Findings**: Both the average wage per hour and illiteracy rate were identified as significant predictors of poverty, with an R² score of 0.78.
 
-4. **Model Comparison**
+4. **Model Comparison** <br>
 The performance of the **Ridge Regression** and **PCR** models was compared using their R² scores, and both showed strong predictive capabilities. Ridge Regression provided a slightly better fit to the data with a higher R² score, but PCR offered additional insights into the importance of literacy in combating poverty.
 
 ## Conclusion
