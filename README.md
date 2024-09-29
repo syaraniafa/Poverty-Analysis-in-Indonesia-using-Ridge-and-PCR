@@ -16,11 +16,11 @@ The initial analysis was performed using Multiple Linear Regression to identify 
 
 2. **Ridge Regression**
 To address multicollinearity, Ridge Regression was implemented. This method adds a penalty to the size of the coefficients, thus mitigating the issue of multicollinearity and improving model stability.
-- **Key Findings**: Average wage per hour is a significant predictor of poverty, with an R² score of 0.87, indicating a good fit to the data.
+    - **Key Findings**: Average wage per hour is a significant predictor of poverty, with an R² score of 0.87, indicating a good fit to the data.
 
 3. Principal Component Regression (PCR)
 Principal Component Regression (PCR) was employed as an additional method to handle multicollinearity by transforming the independent variables into principal components. PCR reduces dimensionality and focuses on components that explain the most variance in the data.
-- **Key Findings**: Both the average wage per hour and illiteracy rate were identified as significant predictors of poverty, with an R² score of 0.78.
+    - **Key Findings**: Both the average wage per hour and illiteracy rate were identified as significant predictors of poverty, with an R² score of 0.78.
 
 4. **Model Comparison**
 The performance of the **Ridge Regression** and **PCR** models was compared using their R² scores, and both showed strong predictive capabilities. Ridge Regression provided a slightly better fit to the data with a higher R² score, but PCR offered additional insights into the importance of literacy in combating poverty.
